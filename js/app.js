@@ -8,16 +8,17 @@ Qus=prompt("What your name please");
 conf1= confirm('Welcome agian '+Qus +' , are you ready to answes a few questions? ');
 
 
+
 switch(conf1)
 {
     case true :
         {
             conf2=confirm("coooool , let's started (*^*), please use answer with Just yes or no ");
+
+
             Qus1=prompt('Do you Know who am i ? (yes or no)');
             
-            
-            
-            
+      
 
             if(Qus1.toUpperCase()==='YES' ||Qus1.toUpperCase()==='Y' )
             {
@@ -31,10 +32,10 @@ switch(conf1)
             }
             else
             {
-                alert('inavalid answer');
+                alert('invalid answer');
             }
 
-            Qus2=prompt('Do you Know how old I am? (yes or no)');
+            Qus2=prompt('Are im a gamer or a programmer? (yes or no)');
             if(Qus2.toUpperCase()==='YES'||Qus2.toUpperCase()==='Y' )
             {
                 yesCount++;
@@ -51,7 +52,7 @@ switch(conf1)
             }
 
             
-            Qus3=prompt('Do you know what is my favorite football team ? (yes or no)');
+            Qus3=prompt('Do you Know if i like a pizza ? (yes or no)');
             if(Qus3.toUpperCase()==='YES'||Qus3.toUpperCase()==='Y' )
             {
                 yesCount++;
@@ -67,7 +68,7 @@ switch(conf1)
                 alert('inavalid answer');
             }
 
-            Qus4=prompt('Do you know what is my favorite color ? (yes or no)');
+            Qus4=prompt('Do you know if my favorite color is Black ? (yes or no)');
             if(Qus4.toUpperCase()==='YES'||Qus4.toUpperCase()==='Y' )
             {
                 yesCount++;
@@ -83,7 +84,7 @@ switch(conf1)
                 alert('inavalid answer');
             }
 
-            Qus5=prompt('Do you know what is my role model ?(yes or no)');
+            Qus5=prompt('Do you ask your self why are you here ?(yes or no)');
             if(Qus5.toUpperCase()==='YES'||Qus5.toUpperCase()==='Y' )
             {
                 yesCount++;
