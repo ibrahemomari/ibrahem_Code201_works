@@ -159,7 +159,7 @@ for(let i=0 ;i<6;i++)
 
     for(let j=0 ; j<footballTeams.length ; j++)
     {
-        if(footballTeams[j]==Qus6)
+        if(footballTeams[j]==Qus6.toUpperCase())
         {
             alert("You are incredible , thats correct answer ");
             score++;
