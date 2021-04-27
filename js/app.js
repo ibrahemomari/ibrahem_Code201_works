@@ -1,5 +1,7 @@
 'use strict';
-let Qus,Qus1,Qus2,Qus3,Qus4,Qus5,conf1,conf2,yesCount=0,noCount=0;
+let Qus,Qus1,Qus2,Qus3,Qus4,Qus5,Qus6,Qus7,conf1,conf2,yesCount=0,noCount=0,qus6Count=0,qus7Count=0,score=0 ;
+
+let footballTeams=['LIVERPOOL','BARCELONA','AC MILAN','JUVENTUS','MAN CITY'];
 
 alert("Welcome To My Page ");
 
@@ -24,6 +26,7 @@ switch(conf1)
             {
                 yesCount++;
                 alert('correct answer ♥');
+                score++;
             }
             else if(Qus1.toUpperCase()==='NO' || Qus1.toUpperCase()==='N')
             {
@@ -40,6 +43,7 @@ switch(conf1)
             {
                 yesCount++;
                 alert('correct answer ♥');
+                score++;
             }
             else if(Qus2.toUpperCase()==='NO' || Qus2.toUpperCase()==='N')
             {
@@ -57,6 +61,7 @@ switch(conf1)
             {
                 yesCount++;
                 alert('correct answer ♥');
+                score++;
             }
             else if(Qus3.toUpperCase()==='NO'|| Qus3.toUpperCase()==='N')
             {
@@ -73,6 +78,7 @@ switch(conf1)
             {
                 yesCount++;
                 alert('correct answer ♥');
+                score++;
             }
             else if(Qus4.toUpperCase()==='NO'|| Qus4.toUpperCase()==='N')
             {
@@ -89,6 +95,7 @@ switch(conf1)
             {
                 yesCount++;
                 alert('correct answer ♥');
+                score++;
             }
             else if(Qus5.toUpperCase()==='NO'|| Qus5.toUpperCase()==='N')
             {
@@ -114,6 +121,70 @@ switch(conf1)
             
         
 }
+
+
+
+for(let i=0 ;i<4;i++)
+{
+    Qus6=parseInt(prompt("Ok , now can you gusse Guess how tall is my height? "));
+
+    if(Qus6===176)
+    {
+        alert("You are incredible , thats correct answer ");
+        score++;
+        break;
+        
+    }
+    else if (Qus6<176)
+    {
+        alert("your answer("+Qus6+') its less than correct answer');
+        qus6Count++;
+    }
+    else
+    {
+        alert("your answer("+Qus6+') its more than correct answer');
+        qus6Count++;
+    }
+
+}
+if (qus6Count==4)
+{
+    alert('Sorry, your chances are exhausted.\n The correct answer is (176) cm');
+}
+
+let status;
+for(let i=0 ;i<6;i++)
+{
+    Qus6=(prompt("Ok , now can you gusseWho are the soccer teams that I encourage? "));
+
+    for(let j=0 ; j<footballTeams.length ; j++)
+    {
+        if(footballTeams[j]==Qus6)
+        {
+            alert("You are incredible , thats correct answer ");
+            score++;
+            status=true;
+            break;
+            
+        }
+    }
+
+    if(status)
+    {
+        
+        break;
+    }
+    
+    
+
+   
+
+}
+
+alert('My soccer teams that I encourage is \n'+footballTeams);
+
+
+alert('your score is ( '+score+' ) ,Great Job')
 
 document.write('<h3>You answred '+yesCount+' questions with yes '+'</h3>');
 document.write('<h3>You answred '+noCount+' questions with no '+'</h3>');

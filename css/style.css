@@ -89,3 +89,34 @@ script
     border-radius: 20px;
     margin-top: 20px;
 }
+#myTopTen
+{
+    margin-top: 15px;
+}
+
+
+#myTopTen ol
+{
+    background-color: rgba(161, 245, 203, 0.514);
+    padding: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 20px;
+}
+#myTopTen ol li img 
+{
+    width: 30px;
+    margin-left: 50px;
+}
+#work_experience h3 , #myTopTen h3
+{
+    font-size: 30px;
+    text-shadow: 0 0 4px white;
+}
+#work_experience ul li
+{
+    display: block;
+    background-color: rgba(161, 245, 203, 0.514);
+    padding: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 20px;
+}
