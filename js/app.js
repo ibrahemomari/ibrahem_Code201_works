@@ -123,8 +123,11 @@ alert('My soccer teams that I encourage is \n' + soccerTeams(footballTeams));
 
 
 
+function result (){
+    alert('your score is ( ' + score + ' ) ,Great Job')
 
-alert('your score is ( ' + score + ' ) ,Great Job')
+    document.write('<h3>You answred ' + yesCount + ' questions with yes ' + '</h3>');
+    document.write('<h3>You answred ' + noCount + ' questions with no ' + '</h3>');
+}
 
-document.write('<h3>You answred ' + yesCount + ' questions with yes ' + '</h3>');
-document.write('<h3>You answred ' + noCount + ' questions with no ' + '</h3>');
+result();
